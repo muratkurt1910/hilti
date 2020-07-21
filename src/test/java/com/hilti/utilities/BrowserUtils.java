@@ -39,4 +39,9 @@ public class BrowserUtils {
             e.printStackTrace();
         }
     }
+
+    public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), timeToWaitInSec);
+        return wait.until(ExpectedConditions.visibilityOf(element));
+    }
 }

@@ -10,8 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue = "com/hilti/step_definitions",
         dryRun = false,
-        tags = "@Sample"
-
+        tags = "@Smoke"
 )
 public class CukesRunner {
 

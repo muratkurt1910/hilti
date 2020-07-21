@@ -3,6 +3,8 @@ package com.hilti.pages;
 import com.hilti.utilities.ConfigurationReader;
 import com.hilti.utilities.Countries;
 import com.hilti.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
 
@@ -32,7 +34,6 @@ public class HomePage extends BasePage{
 
     public void openURL(String country){
         String url = ConfigurationReader.get("base_url") + getUrlExtension(country);
-        System.out.println("URL = " + url);
         Driver.get().get(url);
     }
 }
